@@ -1,0 +1,42 @@
+:: StoryTitle
+AC_RT_RK_
+
+
+:: StoryData
+{
+  "ifid": "65650F70-4CF4-4818-968F-7F59B165D9D6",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Johnnie Walker",
+  "zoom": 1
+}
+
+
+:: Clarksville {"position":"575,500","size":"100,100"}
+
+
+
+:: Johnnie Walker {"position":"425,375","size":"100,100"}
+I'm Johnnie Walker born and raised in this small town called [[Clarksville]]. When I was younger I though I was gonna make it out of this damn place, but who knew that pissing off the head of the police department you work for can be this troublesome. First your a raising star and then the next being shoved into asignments with dead leads. 
+
+You know being stuck in this place for the past decade can make a man real desperate. Aleast my wife helped me throught the process and sleepless nights, but I barely spend much time with her anymore. We grew more and more distant and soon it feels like I'm living with a stranger in my house. Perhaps it was for the better that we separated, I couldn't give her a live that she deserved or a husband that she can be proud of. 
+
+It's been a while since we separated, but I still see her every now and then. I hope she is doing good for herself. Just today I her at the station, but I wasn't able to talk to her much before being called on my the Chief. 
+
+Apparently they found the evidence of a missing person is dead....or whatever. 
+
+[[START]] 
+
+
+
+
+:: Mr. John Henry Smith {"position":"575,375","size":"100,100"}
+
+
+
+:: START {"position":"575,250","size":"100,100"}
+Your boss drops a file on your desk, it reads "The Murder of [[Mr. John Henry Smith]]." He also leaves a bag with pieces of [[evidence]] from the scene. Before walking away, he says "take a stab at it." 
+
+
+:: evidence {"position":"700,375","size":"100,100"}
+You open the bag, and find 3 pieces of evidence, you grab the first, a car key fob. An important object to the owner as it allows them to travel to different places. Without it, it would be very hard to get to places, meet new people, and do everyday task. This object is very important to daily life. 
