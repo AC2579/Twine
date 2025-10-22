@@ -1,0 +1,744 @@
+:: StoryTitle
+AC_RT_RK_
+
+
+:: StoryData
+{
+  "ifid": "65650F70-4CF4-4818-968F-7F59B165D9D6",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Beginning",
+  "zoom": 1
+}
+
+
+:: Apartment {"position":"500,600","size":"100,100"}
+You go to the address of the apartment you were advised to visit and found people already living there, from what you were told it seems like Mr. Smith hasn't been living the house for a long time now. Around a month ago. 
+
+Nothing...
+
+Well better check the Car and Cafe before it gets too late.
+
+[[Car]]
+
+[[Cafe]]
+
+
+
+
+:: Beginning {"position":"700,0","size":"100,100"}
+(align:"=><=")+(box:"X=")[[Start]]
+
+A story by 
+
+(align:"=><=")+(box:"X=")[[Credits]]
+
+
+
+
+
+
+:: Cafe {"position":"900,600","size":"100,100"}
+You go to the local Cafe that Mr. Smith always goes to and order a latte and ask the owner some questions. 
+
+(link-reveal:"Have you seen Mr. Smith recently? I heard he's a regular here.")[
+"Mr. Smith? Oh, yes when ever he is in town he would order a coffee from us everyday, but I haven't seen him in a few days."
+
+(link-reveal:"I see, has he been acting strange in recent visits?")[
+"Recent visit? No, when he first started ordering from us he did seem kind of nervous and acted like everyone around him was gunning for him. After the 4th time he ordered he became much more approachable."
+ 
+(link-reveal:"I see thanks")[
+Damn a dead end.
+
+[[Exit->Cafe exit]]
+  ]
+ ]
+]
+
+
+
+:: Cafe Car {"position":"1250,600","size":"100,100"}
+You decided to search for clues first in Mr. Smith's car, his car is located in the Police station's garage and hasn't been tampered with. He curtainly has a nice car, nicer than anything any other people in this town has atleast.
+
+No signs of forceful entry or damage besides a few scratches from traveling. 
+
+Before the officer who found the abandoned car goes on break he gives you the key to the Car, and suggest you to look through the rear and driver seats, and the trunk. He also saids, "The car was found parked at Apple St.". Weird that is only a few streets away from your house.
+
+Check [[Cafe Driver Seats]]
+
+Check [[Cafe Rear Seats]]
+
+Check [[Cafe Trunk]]
+
+
+
+:: Cafe Driver Seat3 {"position":"1600,300","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+ 
+ Check [[Rear Seats->Cafe rs5]] 
+
+
+:: Cafe Driver Seats {"position":"1400,600","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+ 
+ Check [[Rear Seats->Cafe Rear Seats1]] 
+ 
+ Check [[Trunk->Cafe Trunk1]] 
+
+
+
+
+:: Cafe Driver Seats 2 {"position":"1750,925","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+  
+  [[Finich Check->Cafe Finish Check]]
+
+
+:: Cafe Driver Seats1 {"position":"1600,800","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+ 
+ 
+ Check [[Trunk->Cafe Trunk4]] 
+
+
+:: Cafe Ds5 {"position":"1750,400","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+  
+[[Finich Check->Cafe Finish Check]]
+
+
+:: Cafe Finish Check {"position":"1950,600","size":"100,100"}
+Well another dead end case, what did you expected? This wasn't the first one you got and certainly not the last. 
+
+You head back to the station to checkout for the day, and you find your wife there talking with a unfamiliar person. From the conversation you catch the name Mr.Smith.... wait Mr.Smitch the missing person?
+
+You rush over to then and behold, the person that's been missing for days and the person you spent a entire day searching for. Standing right in front of you. 
+
+After asking what was going on here, you were told that apparently Mr. Smith's car ran out of gas when he got to town  late one night and couldn't get to his apartment, so he decided to book a hotel room and bought a can of gas the next day for his car. But, when he got back to his car he found that it had been towed for illegal parking. He didn't know his way around town and was lost until your wife saw him and helped him to the police station. 
+
+Do give him the key?
+(link: "Give the key")[
+    (set: $has_key to false)
+    (print:"You lost a key")
+]
+
+[[Clock Out]]
+
+
+:: Cafe House {"position":"1100,400","size":"100,100"}
+You go to the address of the apartment you were advised to visit and found people already living there, from what you were told it seems like Mr. Smith hasn't been living the house for a long time now. Around a month ago. 
+
+Nothing...
+
+Well better check the Car before it gets too late.
+
+[[Cafe Car]]
+
+
+:: Cafe Rear Seats {"position":"1400,850","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing.
+
+Check [[Driver Seats->Cafe Driver Seats1]] 
+
+Check [[Trunk->Cafe Trunk3]] 
+
+
+:: Cafe Rear Seats1 {"position":"1600,700","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing.
+
+Check [[Trunk->Cafe Trunk2]] 
+
+
+:: Cafe Rear Seats2 {"position":"1750,500","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing.
+
+[[Finich Check->Cafe Finish Check]]
+
+
+:: Cafe Trunk {"position":"1400,350","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy. 
+
+Check[[Driver Seats->Cafe Driver Seat3]] 
+
+Check[[Rear Seats->Cafe rs]] 
+
+
+
+
+:: Cafe Trunk1 {"position":"1600,500","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy.
+
+Check[[Rear Seats->Cafe Rear Seats2]]
+
+
+
+:: Cafe Trunk2 {"position":"1750,700","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy.
+
+[[Finich Check->Cafe Finish Check]]
+
+
+:: Cafe Trunk3 {"position":"1600,925","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy. 
+
+ Check [[Driver Seats->Cafe Driver Seats 2]] 
+
+
+:: Cafe Trunk4 {"position":"1750,800","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy. 
+
+[[Finich Check->Cafe Finish Check]]
+
+
+:: Cafe exit {"position":"1100,600","size":"100,100"}
+When you exited the Cafe you get a call from you boss, you pick it up,
+
+"Hey, where are you right now?"
+
+(link-reveal:"Just checked out the Cafe, what's wrong")[
+"Oh, nothing much your wife just came by the station to ask about your whereabouts."
+
+(link-reveal:"I see, can you tell her I'm working and I'll see her tonight?")[
+"Yeah, ok no problem"
+ ]
+]
+
+Alright better wrap this up quicker, what to check next?
+
+Check [[Car->Cafe Car]]
+
+Check [[House->Cafe House]]
+
+
+:: Cafe rs {"position":"1600,400","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing.
+
+Check [[Driver Seats->Cafe Ds5]] 
+
+
+:: Cafe rs5 {"position":"1750,300","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing.
+
+[[Finich Check->Cafe Finish Check]]
+
+
+:: Car {"position":"700,600","size":"100,100"}
+You decided to search for clues first in Mr. Smith's car, his car is located in the Police station's garage and hasn't been tampered with. He curtainly has a nice car, nicer than anything any other people in this town has atleast.
+
+No signs of forceful entry or damage besides a few scratches from traveling. 
+
+Before the officer who found the abandoned car goes on break he gives you the key to the Car, and suggest you to look through the rear and driver seats, and the trunk. He also saids, "The car was found parked at 123 Apple St.". Weird that is only a few streets away from your house.
+
+Check [[Driver Seats]]
+
+Check [[Rear Seats]]
+
+Check [[Trunk]]
+
+
+
+
+
+
+:: Car Cafe {"position":"800,1550","size":"100,100"}
+You go to the local Cafe that Mr. Smith always goes to and order a latte and ask the owner some questions. 
+
+(link-reveal:"Have you seen Mr. Smith recently? I heard he's a regular here.")[
+"Mr. Smith? Oh, yes when ever he is in town he would order a coffee from us everyday, but I haven't seen him in a few days."
+
+(link-reveal:"I see, has he been acting strange in recent visits?")[
+"Recent visit? No, when he first started ordering from us he did seem kind of nervous and acted like everyone around him was gunning for him. After the 4th time he ordered he became much more approachable."
+ 
+(link-reveal:"I see thanks")[
+Damn a dead end.
+
+[[Exit->Car Cafe exit]]
+  ]
+ ]
+]
+
+
+:: Car Cafe exit {"position":"800,1700","size":"100,100"}
+When you exited the Cafe you get a call from you boss, you pick it up,
+
+"Hey, where are you right now?"
+
+(link-reveal:"Just checked out the Cafe, what's wrong")[
+"Oh, nothing much your wife just came by the station to ask about your whereabouts."
+
+(link-reveal:"I see, can you tell her I'm heading back right now?")[
+"Yeah, ok no problem"
+ ]
+]
+
+Alright better wrap this up and head back.
+
+[[Head Back]]
+
+
+:: Car Continue {"position":"900,1400","size":"100,100"}
+You decide to brush aside your concerns and decided to focuse on the investigation.
+
+You have enough time to search one more thing before you can clock out, what do you search?
+
+[[Apartment->Care Apartment]] 
+
+[[Cafe->Car Cafe]] 
+
+
+:: Care Apartment {"position":"1000,1550","size":"100,100"}
+You go to the address of the apartment you were advised to visit and found people already living there, from what you were told it seems like Mr. Smith hasn't been living the house for a long time now. Around a month ago. 
+
+Nothing...
+
+When you exited the apartment you get a call from you boss, you pick it up,
+
+[[Pickup]]
+
+
+:: Clarksville {"position":"900,200","size":"100,100"}
+A small town in Tennessee where Johnnie was born. This is a town that is known for its link to Fort Campbell, the U.S Army post that straddles Tennessee . This is a less thriving metropolitan area and a more liminal space that mirrors his own professional and personal stagnation. The town's general  character provides the backdrop for his "dead-end job" and contains the undercurrents of a wider world necessary for a compelling mystery.   
+
+
+
+:: Clock Out {"position":"2100,600","size":"100,100"}
+You end your days of usless work and head home with your wife.
+
+(if: $has_key is true)[
+    (link-reveal: "Use Mr. Smith's key to open the door")[
+        (print: "The door opens. You feel a strange chill as you step inside...")
+    ]
+]
+
+[[End->Credits]] 
+
+
+:: Continue {"position":"700,400","size":"100,100"}
+As usual you show up at your job at the police department as a investigator. 
+
+Your boss, a tall tanned man with curly hair and sunken eyes from severe sleep deprivation, drops a file on your desk, it reads "Missing Person:Mr. John Henry Smith." 
+
+"Hey man can you take care of this case?"
+
+(link-reveal:"No, can't I have a date with my wife later sorry.")[
+
+"Oh, that's fine. I'll give it to one of our new investigators, go enjoy yourself. Also you don't need to come in the next day, go take a break with your wife."
+
+[[Leave]]
+]
+
+(link-reveal: "Sure.")[
+
+(Another dead end case, the guys been missing for three days now, in such a small town he either left or died in a dich somewhere.) 
+
+{(live: 3s)[(stop:)]}
+(link-reveal: "What is the situation on him?")[
+
+"A big shot from some million dollar company. He has been visiting in recent months, from what I heard he want to build a factory here. His wife reported that he hasn't returned and has been worried sick"
+
+(link-reveal:"(Worried Sick?)I'll see what I can do, no promises though")[
+
+Thank you. From what we have right now you should look into the apartment he has in the town, his car we fround abandoned, and the small coffee shop he always visits. 
+
+Go to Mr. Smith's [[Apartment]]
+
+Go to Mr. Smith's [[Car]]
+
+Go to [[Cafe]]
+  ]
+ ]
+]
+
+(set: $has_key to false)
+
+
+
+
+
+
+
+
+
+
+:: Credits {"position":"500,100","size":"100,100"}
+Thanks for playing:) 
+
+There are four endings, did you find them all? 
+
+[[Start Again?->Beginning]]
+
+
+:: Driver Seat3 {"position":"500,1000","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+ 
+ Check [[Rear Seats->rs5]] 
+ 
+
+
+
+
+:: Driver Seats {"position":"700,800","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+ 
+ Check [[Rear Seats->Rear Seats1]] 
+ 
+ Check [[Trunk->Trunk1]] 
+
+
+
+
+:: Driver Seats 2 {"position":"1100,1150","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+  
+  [[Finish Check]]
+
+
+:: Driver Seats1 {"position":"900,1000","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+ 
+ 
+ Check [[Trunk->Trunk4]] 
+
+
+
+:: Ds5 {"position":"300,1150","size":"100,100"}
+You check the Driver seat and compartments in the front. 
+
+You found cables, vechical resigtration, and some cash in the passenger compartment. In the middle compartment you found some letters, condoms, and a familiar key. 
+
+Do you take the key?
+(link: "Take the key")[
+    (set: $has_key to true)
+    (print:"You got a key")
+]
+
+"Well I shouldn't judge the private life of a missing man, but this man certainly has a interesting life." 
+
+(link-reveal:"Check through the letters?")[
+There are letters from a couple of months ago and the most recent one seems to be from last week. The contents seems to be monstly threats to Mr. Smith about some illegal business, it would seems his business is taking some liberties with rules. 
+  ]
+  
+[[Finish Check]]
+
+
+:: End {"position":"350,400","size":"100,100"}
+Thanks for playing:)
+
+
+:: Enter {"position":"500,1650","size":"100,100"}
+You Clock out from work later that day, Mr. Smith never showed back up. He stayed a missing person and no one batted an eye. After all it was another dead end investigation that you were given. You Plant a nice tree in the backyard an apple tree.
+
+The next year the tree grows strong. 
+
+[[Credits]] 
+
+
+:: Finish Check {"position":"700,1300","size":"100,100"}
+You care concerned, why is your wife's lipstick here in this car??
+
+Do you continue the search or investigate what's going on?
+
+[[Continue->Car Continue]]
+
+[[Investigate Lipstick]]
+
+
+:: Go home? {"position":"500,1525","size":"100,100"}
+You head home without clocking out, each step stabs your aching heart with pain. 
+You don't know what's gonna happen if you open that door — no. 
+Who or what will be opening that door when you get there? 
+You don't know as you make the trip "home": 123 Banana St.
+
+(if: $has_key is true)[
+(link-reveal: "Use Mr. Smith's key to open the door")[
+    The key slides in perfectly...
+    
+    (live: 2s)[(goto: "Enter")]
+]
+]
+
+
+:: Head Back {"position":"900,1850","size":"100,100"}
+You head back to the station to checkout for the day, and you find your wife there talking with a unfamiliar person. From the conversation you catch the name Mr.Smith.... wait Mr.Smitch the missing person?
+
+You rush over to then and behold, the person that's been missing for days and the person you spent a entire day searching for. Standing right in front of you. 
+
+After asking what was going on here, you were told that apparently Mr. Smith's car ran out of gas when he got to town  late one night and couldn't get to his apartment, so he decided to book a hotel room and bought a can of gas the next day for his car. But, when he got back to his car he found that it had been towed for illegal parking. He didn't know his way around town and was lost until your wife saw him and helped him to the police station. 
+
+Your reliefed that he is safe and hand him his car keys and the familiar key you found in his car. 
+
+[[Clock Out]]
+
+
+:: Investigate Lipstick {"position":"500,1400","size":"100,100"}
+No, I shouldn't suspect anything. It could've been someone else who uses that same one. No, no, no — there is no way. A wave of dread washes over you as you start to doubt your existence.
+
+(if: $has_key is true)[
+    Wait, there was one more thing. You bring out the key you found in the car.
+    (link-reveal: "Do you compare them?")[
+        Your heart drops and shatters like glass. Can't say their similar, cause they are the exact same. 
+        
+        [[Go home?]]
+    ]
+]
+
+
+
+[[Continue Investigating->Car Continue]] 
+
+
+:: Leave {"position":"500,400","size":"100,100"}
+You made up your mind to spend more time with your wife and pick up the pieces of your relationship. With the love between you two rekindled, the cracks in your life are slowly mended and you see hope in your future. Hope for something better, for something happier, something for the future. 
+
+You and your wife decided to pack up everything and leave this town, that has caused your so much pain. You guys moved to a subarb outside of a big city and decided to open your own little cafe. Something of your own something that others can't take away or control. 
+
+But, your life in the town still haunts your. You still wake up in cold sweat at night, from the momoried from the past. 
+
+[[End->Credits]]
+
+
+:: Pickup {"position":"1000,1700","size":"100,100"}
+"Hey, where are you right now?"
+
+(link-reveal:"Just checked out the Cafe, what's wrong")[
+"Oh, nothing much your wife just came by the station to ask about your whereabouts."
+
+(link-reveal:"I see, can you tell her I'm heading back right now?")[
+"Yeah, ok no problem"
+ ]
+]
+
+[[Head Back]] 
+
+
+:: Rear Seats {"position":"1000,800","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing until you get to the passenger seat and your hands touchs a small cold cylindrical object. Grabing it and pulliing it out fron under the seat you find a......
+
+familiar Lipstick. A gift you gave to your wife. 
+
+Check [[Driver Seats->Driver Seats1]] 
+
+Check [[Trunk->Trunk3]] 
+
+
+:: Rear Seats1 {"position":"600,1000","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing until you get to the passenger seat and your hands touchs a small cold cylindrical object. Grabing it and pulliing it out fron under the seat you find a......
+
+familiar Lipstick. A gift you gave to your wife. 
+
+Check [[Trunk->Trunk2]] 
+
+
+:: Rear Seats2 {"position":"800,1150","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing until you get to the passenger seat and your hands touchs a small cold cylindrical object. Grabing it and pulliing it out fron under the seat you find a......
+
+familiar Lipstick. A gift you gave to your wife. 
+
+[[Finish Check]]
+
+
+:: Start {"position":"700,200","size":"100,100"}
+I'm Johnnie Walker born and raised in this small town called [[Clarksville]]. When I was younger I though I was gonna make it out of this damn place, but who knew that pissing off the head of the police department you work for can be this troublesome. First your a raising star and then the next being shoved into asignments with dead leads. 
+
+You know being stuck in this place for the past decade can make a man real desperate. Aleast my wife helped me throught the process and sleepless nights, but I barely spend much time with her anymore. We grew more and more distant and soon it feels like I'm living with a stranger in my house. Especially in recent months, she's been out travelling more and more, disappearing for days at a time. I wish I could give her a life that she deserved or a husband that she can be proud of. 
+
+[[Continue]]
+
+
+
+
+:: Trunk {"position":"400,800","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy. 
+
+Check[[Driver Seats->Driver Seat3]] 
+
+Check[[Rear Seats->rs]] 
+
+
+
+
+:: Trunk1 {"position":"800,1000","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy.
+
+Check[[Rear Seats->Rear Seats2]]
+
+
+
+:: Trunk2 {"position":"600,1150","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy.
+
+[[Finish Check]]
+
+
+:: Trunk3 {"position":"1100,1000","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy. 
+
+ Check [[Driver Seats->Driver Seats 2]] 
+
+
+:: Trunk4 {"position":"900,1150","size":"100,100"}
+In the trunk of the car you find nothing, but a spare tire and a indented mark on the floor of the trunk. It seems like Mr. Smith was lugging around something heavy. 
+
+[[Finish Check]]
+
+
+:: rs {"position":"300,1000","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing until you get to the passenger seat and your hands touchs a small cold cylindrical object. Grabing it and pulliing it out fron under the seat you find a......
+
+familiar Lipstick. A gift you gave to your wife. 
+
+Check [[Driver Seats->Ds5]] 
+
+
+:: rs5 {"position":"500,1150","size":"100,100"}
+The rear seats seems to be rather spotless... a little too spotless, it looks like it's cleaned rather regularly. Nothing much to see on top of the seats, but maybe something underneath?
+
+You reach your hand below the seats to see if you can feel anything. You feel nothing until you get to the passenger seat and your hands touchs a small cold cylindrical object. Grabing it and pulliing it out fron under the seat you find a......
+
+familiar Lipstick. A gift you gave to your wife. 
+
+[[Finish Check]]
